@@ -75,7 +75,7 @@ object main {
 
   def main(args: Array[String]): Unit = {
 
-
+ //teste again
     bit1.generateImageBitMap(imgpath + "imageCrop.png")
 
     bit.generateImageBitMap(imgpath + "imagesvignette.png")

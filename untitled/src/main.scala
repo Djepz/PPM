@@ -67,23 +67,19 @@ object main {
   val bit3: BitMap = Create.makeBitMap(qtnoise)
 
 
- // val qt: QTree[Coords] = BitMap.makeQTree(bit.bit)
+  // val qt: QTree[Coords] = BitMap.makeQTree(bit.bit)
   val qt2:QTree[Coords] = BitMap.makeQTree(bit6.bit)
- // val bit7: BitMap = Create.makeBitMap(qt2)
+  // val bit7: BitMap = Create.makeBitMap(qt2)
 
   val list = List(List(1,2,3,4), List(4,5,6,8), List(9,10,11,12),List(13,14,15,16))
 
   def main(args: Array[String]): Unit = {
 
- //teste again
     bit1.generateImageBitMap(imgpath + "imageCrop.png")
 
     bit.generateImageBitMap(imgpath + "imagesvignette.png")
     bit6.generateImageBitMap(imgpath + "imagesTest2og.png")
 
-
-
-  // Edição Teste X
   }
 }
 

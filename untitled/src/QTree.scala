@@ -1,9 +1,0 @@
-trait QTree[+A]
-
-
-
-
-
-
-
-

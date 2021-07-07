@@ -38,9 +38,6 @@ object main {
   val qt1: QTree[Coords] = QNode(((0, 0), (4, 4)), QNode(((0,0),(2,2)),l1,l2,l3,l4), QNode(((2,0),(4,2)),l5,l6,l7,l8), QNode(((0,2),(2,4)),l9,l10,l11,l12),
     QNode(((2,2),(4,4)),l13,l14,l15,l16))
 
-
-
-
   val bit: BitMap = BitMap({
    val image: Array[Array[Int]] = ImageUtil.readColorImage(imgpath + "test.png")
    image.map(_.toList).toList
@@ -51,7 +48,7 @@ object main {
     image.map(_.toList).toList
   })
 
-  val qt: QTree[Coords] = BitMap.makeQTree(bit.bit)
+ // val qt: QTree[Coords] = BitMap.makeQTree(bit.bit)
   //val bitscale: qt2.scale()
   //val bit1: BitMap = Create.makeBitMap(qt2)
   //val bit2: BitMap = Create.makeBitMap(qt1)
@@ -60,22 +57,24 @@ object main {
 
 
 
-  val qtcrop:QTree[Coords] = QTreeTest.cropTool(qt, ((15,15),(30,30)))
-  val bit1: BitMap = Create.makeBitMap(qtcrop)
+  //val qtcrop:QTree[Coords] = QTreeTest.cropTool(qt, ((15,15),(30,30)))
+  // val bit1: BitMap = Create.makeBitMap(qtcrop)
 
-  val qtnoise: QTree[Coords] = QTreeTest.mapColourEffect(noise,qt1)
-  val bit3: BitMap = Create.makeBitMap(qtnoise)
+  //val qtnoise: QTree[Coords] = QTreeTest.mapColourEffect(noise,qt1)
+  //val bit3: BitMap = Create.makeBitMap(qtnoise)
 
 
   // val qt: QTree[Coords] = BitMap.makeQTree(bit.bit)
-  val qt2:QTree[Coords] = BitMap.makeQTree(bit6.bit)
+  //val qt2:QTree[Coords] = BitMap.makeQTree(bit6.bit)
   // val bit7: BitMap = Create.makeBitMap(qt2)
 
-  val list = List(List(1,2,3,4), List(4,5,6,8), List(9,10,11,12),List(13,14,15,16))
+  //val list = List(List(1,2,3,4), List(4,5,6,8), List(9,10,11,12),List(13,14,15,16))
 
   def main(args: Array[String]): Unit = {
+    println(directory)
+    println(imgpath)
 
-    bit1.generateImageBitMap(imgpath + "imageCrop.png")
+    //bit1.generateImageBitMap(imgpath + "imageCrop.png")
 
     bit.generateImageBitMap(imgpath + "imagesvignette.png")
     bit6.generateImageBitMap(imgpath + "imagesTest2og.png")
